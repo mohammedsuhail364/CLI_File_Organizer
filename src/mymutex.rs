@@ -1,12 +1,12 @@
 use std::{
     ops::AddAssign,
     sync::Mutex,
-    thread::{scope, sleep, spawn},
+    thread::{scope, sleep},
     time::Duration,
 };
 
 pub fn test_mutex() {
-    let mut score = Mutex::new(0u16);
+    let score = Mutex::new(0u16);
     // let unlocked_data = score.lock();
     // let mut data = unlocked_data.unwrap();
     // data.add_assign(5);
