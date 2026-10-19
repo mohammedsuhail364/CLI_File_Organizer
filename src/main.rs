@@ -1,6 +1,7 @@
 pub mod myfs;
 pub mod closures;
 pub mod mymutex;
+pub mod mympsc;
 fn main() {
     // println!("Practicing File Systems ");
     // myfs::test_create_dir();
@@ -8,7 +9,9 @@ fn main() {
     // myfs::read_somefile();
     // println!("Practicing Closures");
     // closures::test_closures();
-    println!("Practicing mutex");
-    mymutex::test_mutex();
+    // println!("Practicing mutex");
+    // mymutex::test_mutex();
+    println!("Practicing mpsc");
+    mympsc::test_channels();
 
 }
